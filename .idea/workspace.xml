@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/controllers/GenerateDataController.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/sample/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/sample/MainScene.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/sample/generateData.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="$PROJECT_DIR$/src/controllers/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MainScene.fxml" afterPath="$PROJECT_DIR$/src/views/MainScene.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/sample/generateData.fxml" afterPath="$PROJECT_DIR$/src/views/generateData.fxml" />
+      <change beforePath="$PROJECT_DIR$/points.txt" afterPath="$PROJECT_DIR$/points.txt" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/GenerateDataController.java" afterPath="$PROJECT_DIR$/src/controllers/GenerateDataController.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,11 +78,9 @@
       <file leaf-file-name="GenerateDataController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controllers/GenerateDataController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-169">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,8 +88,8 @@
       <file leaf-file-name="points.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/points.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="595">
+              <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -161,6 +153,7 @@
         <option value="$PROJECT_DIR$/src/controllers/Main.java" />
         <option value="$PROJECT_DIR$/src/views/MainScene.fxml" />
         <option value="$PROJECT_DIR$/src/views/generateData.fxml" />
+        <option value="$PROJECT_DIR$/points.txt" />
         <option value="$PROJECT_DIR$/src/controllers/GenerateDataController.java" />
       </list>
     </option>
@@ -405,12 +398,12 @@
       <workItem from="1520507218224" duration="536000" />
       <workItem from="1520516707331" duration="915000" />
       <workItem from="1520517755788" duration="1612000" />
-      <workItem from="1520874167264" duration="8796000" />
+      <workItem from="1520874167264" duration="10212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19899000" />
+    <option name="totallyTimeSpent" value="21315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -710,19 +703,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/points.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="595">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/GenerateDataController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-169">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
