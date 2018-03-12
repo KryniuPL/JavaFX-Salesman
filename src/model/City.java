@@ -2,12 +2,13 @@ package model;
 
 import javafx.geometry.Point2D;
 
-public class City implements Comparable<City> {
+public class City extends Point2D implements Comparable<City> {
 
     private final Point2D location;
 
     public City(double x, double y)
     {
+        super(x, y);
         this.location = new Point2D(x, y);
     }
 

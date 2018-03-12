@@ -45,7 +45,9 @@ public class GenerateDataController {
             FileWriter writer=new FileWriter("points.txt");
             for (City point: points)
             {
-                writer.write(point.toString());
+                writer.write(String.valueOf(point.getX()));
+                writer.write(System.getProperty("line.separator"));
+                writer.write(String.valueOf(point.getY()));
                 writer.write(System.getProperty("line.separator"));
             }
             writer.close();
