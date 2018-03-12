@@ -1,24 +1,24 @@
 package controllers;
 
 import javafx.application.Application;
+import javafx.collections.ObservableList;
+import javafx.collections.ObservableListBase;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.MenuItem;
 
+
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
+
+import java.io.File;
+import java.util.Scanner;
 
 public class Main extends Application {
 
-
-
     @FXML
-    private Button submitButton;
-
-    @FXML
-    private MenuItem generateData;
+    TableView TableContent;
 
     @FXML
     void handleSubmitButtonClick()
@@ -42,7 +42,32 @@ public class Main extends Application {
         {
             System.out.println("GenerateDataMenuItem Exception");
         }
+    }
 
+    @FXML
+    public void handleShowGeneratedData()
+    {
+
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../views/ShowPoints.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage=new Stage();
+
+            System.out.println(ShowPointsController.getPointsFromFile());
+            System.out.println(ShowPointsController.getXValues());
+            System.out.println(ShowPointsController.getYValues());
+
+            TableContent=new TableView<>();
+            TableContent.setItems(ShowPointsController.getXValues());
+
+            stage.setTitle("Points");
+            stage.setScene(new Scene(root));
+            stage.show();
+        }
+        catch (Exception e)
+        {
+            System.out.println("GenerateDataMenuItem Exception");
+        }
     }
 
     @Override
