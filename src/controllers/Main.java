@@ -1,20 +1,18 @@
-package sample;
+package controllers;
 
 import javafx.application.Application;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.MenuItem;
+
 import javafx.stage.Stage;
 
-import java.awt.event.ActionEvent;
-
 public class Main extends Application {
+
+
 
     @FXML
     private Button submitButton;
@@ -33,10 +31,8 @@ public class Main extends Application {
     void handleGenerateDataMenuItem()
     {
         try {
-
-
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("generateData.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../views/generateData.fxml"));
+            Parent root = fxmlLoader.load();
             Stage stage=new Stage();
             stage.setTitle("Generate Data");
             stage.setScene(new Scene(root));
@@ -44,13 +40,14 @@ public class Main extends Application {
         }
         catch (Exception e)
         {
-            System.out.println("Cos sie popsulo");
+            System.out.println("GenerateDataMenuItem Exception");
         }
+
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../views/MainScene.fxml"));
         primaryStage.setTitle("Salesman");
 
         primaryStage.setScene(new Scene(root, 600, 400));
