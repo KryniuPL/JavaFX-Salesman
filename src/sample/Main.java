@@ -12,18 +12,40 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
+import java.awt.event.ActionEvent;
+
 public class Main extends Application {
 
-    public Button submitButton;
-    public MenuItem generateData;
+    @FXML
+    private Button submitButton;
 
-    public void handleSubmitButtonClick()
+    @FXML
+    private MenuItem generateData;
+
+    @FXML
+    void handleSubmitButtonClick()
     {
+
         System.out.println("Submit Button clicked ! ");
     }
-    public void handleGenerateDataMenuItem()
+
+    @FXML
+    void handleGenerateDataMenuItem()
     {
-        System.out.println("Generate Data!");
+        try {
+
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("generateData.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            Stage stage=new Stage();
+            stage.setTitle("Generate Data");
+            stage.setScene(new Scene(root));
+            stage.show();
+        }
+        catch (Exception e)
+        {
+            System.out.println("Cos sie popsulo");
+        }
     }
 
     @Override
