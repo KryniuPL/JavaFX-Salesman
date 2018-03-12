@@ -5,6 +5,9 @@ package controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+import model.City;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,7 +19,7 @@ public class GenerateDataController {
     @FXML
     public TextField NumberOfPoints;
 
-    private List<Double> points;
+    public List<City> points;
     private double rangeMin=0;
     private double rangeMax=100;
 
@@ -24,10 +27,9 @@ public class GenerateDataController {
     void generateData()
     {
         int IntegerPoints=Integer.parseInt(NumberOfPoints.getText());
-        double randomValueX=0;
-        double randomValueY=0;
+        double randomValueX;
+        double randomValueY;
 
-        System.out.println(IntegerPoints);
         points=new ArrayList<>();
 
 
@@ -35,22 +37,29 @@ public class GenerateDataController {
             Random random=new Random();
             randomValueX=rangeMin+(rangeMax-rangeMin)*random.nextDouble();
             randomValueY=rangeMin+(rangeMax-rangeMin)*random.nextDouble();
-            points.add(randomValueX);
-            points.add(randomValueY);
+            City city=new City(randomValueX,randomValueY);
+            points.add(city);
+
         }
         try {
             FileWriter writer=new FileWriter("points.txt");
-            for (Double point: points)
+            for (City point: points)
             {
                 writer.write(point.toString());
                 writer.write(System.getProperty("line.separator"));
             }
             writer.close();
         } catch (IOException e) {
-            System.out.println("POPSUTE!!!");
+            System.out.println("Fix me!!! - Reports Java Writer");
             e.printStackTrace();
         }
 
-        //TODO
+        Stage stage=(Stage) NumberOfPoints.getScene().getWindow();
+        stage.close();
+
+
+
+
+
     }
 }

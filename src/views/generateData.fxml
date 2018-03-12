@@ -8,7 +8,7 @@
 
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="222.0"
-            prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GenerateDataController">
+            prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GenerateDataController" >
    <children>
       <Label layoutX="14.0" layoutY="42.0" prefHeight="27.0" prefWidth="318.0" text="How many points you want to create?">
          <font>
