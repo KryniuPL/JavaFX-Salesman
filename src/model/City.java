@@ -6,11 +6,14 @@ public class City extends Point2D implements Comparable<City> {
 
     private final Point2D location;
 
+
     public City(double x, double y)
     {
-        super(x, y);
-        this.location = new Point2D(x, y);
+        super(x,y);
+        this.location = new Point2D(x,y);
     }
+
+
 
     @Override
     public int compareTo(City o) {

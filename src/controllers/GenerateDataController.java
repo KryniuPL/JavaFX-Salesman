@@ -3,25 +3,41 @@ package controllers;
 
 
 
+import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import model.City;
-
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Random;
 
-public class GenerateDataController {
+public class GenerateDataController extends Application {
 
     @FXML
     public TextField NumberOfPoints;
 
-    public List<City> points;
-    private double rangeMin=0;
-    private double rangeMax=100;
+    public static ObservableList<City> points= FXCollections.observableArrayList();
+    private final double rangeMin=0;
+    private final double rangeMax=100;
+
+    @Override
+    public void start(Stage primaryStage) throws Exception
+    {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../views/generateData.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage=new Stage();
+            stage.setTitle("Generate Data");
+            stage.setScene(new Scene(root));
+            stage.show();
+    }
+
 
     @FXML
     void generateData()
@@ -29,9 +45,6 @@ public class GenerateDataController {
         int IntegerPoints=Integer.parseInt(NumberOfPoints.getText());
         double randomValueX;
         double randomValueY;
-
-        points=new ArrayList<>();
-
 
         for (int i=0;i<IntegerPoints;i++) {
             Random random=new Random();
@@ -58,10 +71,7 @@ public class GenerateDataController {
 
         Stage stage=(Stage) NumberOfPoints.getScene().getWindow();
         stage.close();
-
-
-
-
-
     }
+
+
 }
