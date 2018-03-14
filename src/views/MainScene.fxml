@@ -19,7 +19,7 @@
             <items>
                   <MenuItem mnemonicParsing="false" text="Generate new input points" fx:id="generateData" onAction="#handleGenerateDataMenuItem"/>
                   <MenuItem mnemonicParsing="false" text="Show generated data" fx:id="showGeneratedData" onAction="#handleShowGeneratedData" />
-              <MenuItem mnemonicParsing="false" text="Close" />
+
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">

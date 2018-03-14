@@ -5,11 +5,15 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
 
 public class Main extends Application {
 
+    @FXML
+    private MenuItem close;
+    private Stage tmpStage=new Stage();
 
     public static void main(String[] args) {
         launch(args);
@@ -20,7 +24,15 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("../views/MainScene.fxml"));
         primaryStage.setTitle("Salesman");
         primaryStage.setScene(new Scene(root, 600, 400));
+        tmpStage=primaryStage;
         primaryStage.show();
+    }
+
+    @FXML
+    void handleCloseWindows()
+    {
+
+        tmpStage.close();
     }
 
     @FXML
