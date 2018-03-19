@@ -18,7 +18,7 @@ import java.io.IOException;
 
 import java.util.Random;
 
-public class GenerateDataController extends Application {
+public class GenerateDataController{
 
     @FXML
     public TextField NumberOfPoints;
@@ -27,7 +27,7 @@ public class GenerateDataController extends Application {
     private final double rangeMin=0;
     private final double rangeMax=100;
 
-    @Override
+
     public void start(Stage primaryStage) throws Exception
     {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../views/generateData.fxml"));

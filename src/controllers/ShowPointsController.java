@@ -17,7 +17,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class ShowPointsController extends Application {
+public class ShowPointsController{
 
 
     TableView<Point> table;
@@ -32,7 +32,7 @@ public class ShowPointsController extends Application {
         return points;
     }
 
-    @Override
+
     public void start(Stage primaryStage) throws Exception {
 
         primaryStage.setTitle("Points");

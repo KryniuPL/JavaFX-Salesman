@@ -5,15 +5,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.MenuItem;
+
 import javafx.stage.Stage;
 
 
-public class Main extends Application {
-
-    @FXML
-    private MenuItem close;
-    private Stage tmpStage=new Stage();
+public class MainController extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -23,22 +19,21 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("../views/MainScene.fxml"));
         primaryStage.setTitle("Salesman");
-        primaryStage.setScene(new Scene(root, 600, 400));
-        tmpStage=primaryStage;
+        primaryStage.setScene(new Scene(root, 600, 600));
         primaryStage.show();
     }
 
-    @FXML
-    void handleCloseWindows()
-    {
-
-        tmpStage.close();
-    }
 
     @FXML
     void handleSubmitButtonClick() {
         //Główne liczenie
         //TODO
+    }
+
+    @FXML
+    void handleAbout() throws Exception {
+        AboutController aboutController=new AboutController();
+        aboutController.start(new Stage());
     }
 
     @FXML
