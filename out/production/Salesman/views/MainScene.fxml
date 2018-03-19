@@ -8,12 +8,10 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
    <children>
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
         <menus>
@@ -45,20 +43,15 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <ChoiceBox id="ChoiceBox" layoutX="33.0" layoutY="149.0" prefHeight="25.0" prefWidth="193.0" value="Greedy Algorithm">
-        <items>
-          <FXCollections fx:factory="observableArrayList">
-              <String fx:value="Greedy Algorithm" />
-              <String fx:value="Genetic Algorithm" />
-              <String fx:value="Nearest Neighbor Algorithm" />
-          </FXCollections>
-        </items>
+      <ChoiceBox fx:id="ChoiceBox" layoutX="33.0" layoutY="149.0" prefHeight="25.0" prefWidth="193.0" value="Genetic Algorithm" >
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Genetic Algorithm" />
+                  <String fx:value="Nearest Neighbour Algorithm" />
+                  <String fx:value="Greedy Algorithm" />
+              </FXCollections>
+          </items>
       </ChoiceBox>
      <Button fx:id="submitButton" layoutX="33.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleSubmitButtonClick" prefHeight="52.0" prefWidth="150.0" text="Let's go !" />
-      <ImageView fitHeight="237.0" fitWidth="571.0" layoutX="11.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../images/travelling_salesman_problem.png" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>

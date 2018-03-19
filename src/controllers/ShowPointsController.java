@@ -1,7 +1,6 @@
 package controllers;
 
 
-import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.Scene;
@@ -26,7 +25,8 @@ public class ShowPointsController{
         ObservableList<Double> xPoints = getXValues();
         ObservableList<Double> yPoints = getYValues();
         ObservableList<Point> points = FXCollections.observableArrayList();
-        for (int i = 0; i < xPoints.size(); i++) {
+        for (int i = 0; i < xPoints.size(); i++)
+        {
             points.add(new Point(xPoints.get(i), yPoints.get(i)));
         }
         return points;
@@ -58,7 +58,6 @@ public class ShowPointsController{
 
         Scene scene = new Scene(vBox);
         primaryStage.setScene(scene);
-
         primaryStage.show();
     }
 
