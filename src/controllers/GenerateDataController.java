@@ -24,9 +24,10 @@ public class GenerateDataController{
     public TextField NumberOfPoints;
 
     public static ObservableList<City> points= FXCollections.observableArrayList();
-    private final double rangeMin=0;
-    private final double rangeMax=100;
-
+    private final double rangeMinX=160;
+    private final double rangeMaxX=990;
+    private final double rangeMinY=10;
+    private final double rangeMaxY=590;
 
     public void start(Stage primaryStage) throws Exception
     {
@@ -48,8 +49,8 @@ public class GenerateDataController{
 
         for (int i=0;i<IntegerPoints;i++) {
             Random random=new Random();
-            randomValueX=rangeMin+(rangeMax-rangeMin)*random.nextDouble();
-            randomValueY=rangeMin+(rangeMax-rangeMin)*random.nextDouble();
+            randomValueX=rangeMinX+(rangeMaxX-rangeMinX)*random.nextDouble();
+            randomValueY=rangeMinY+(rangeMaxY-rangeMinY)*random.nextDouble();
             City city=new City(randomValueX,randomValueY);
             points.add(city);
 

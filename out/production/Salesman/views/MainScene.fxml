@@ -8,17 +8,19 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
    <children>
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-                  <MenuItem mnemonicParsing="false" text="Generate new input points" onAction="#handleGenerateDataMenuItem"/>
-                  <MenuItem mnemonicParsing="false" text="Show generated data"  onAction="#handleShowGeneratedData" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleGenerateDataMenuItem" text="Generate new input points" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleShowGeneratedData" text="Show generated data" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
@@ -28,7 +30,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" onAction="#handleAbout" />
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
             </items>
           </Menu>
         </menus>
@@ -52,6 +54,11 @@
           </FXCollections>
         </items>
       </ChoiceBox>
-     <Button layoutX="33.0" layoutY="200.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="150.0" text="Let's go !" fx:id="submitButton" onAction="#handleSubmitButtonClick"/>
+     <Button fx:id="submitButton" layoutX="33.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleSubmitButtonClick" prefHeight="52.0" prefWidth="150.0" text="Let's go !" />
+      <ImageView fitHeight="237.0" fitWidth="571.0" layoutX="11.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/travelling_salesman_problem.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
