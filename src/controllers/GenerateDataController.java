@@ -24,10 +24,10 @@ public class GenerateDataController{
     public TextField NumberOfPoints;
 
     public static ObservableList<City> points= FXCollections.observableArrayList();
-    private final double rangeMinX=-145;
-    private final double rangeMaxX=690;
-    private final double rangeMinY=10;
-    private final double rangeMaxY=580;
+    private final double rangeMinX=20;
+    private final double rangeMaxX=980;
+    private final double rangeMinY=20;
+    private final double rangeMaxY=450;
 
     public void start(Stage primaryStage) throws Exception
     {

@@ -15,42 +15,71 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Separator;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import model.*;
 
 public class GeneticAlgorithmController {
 
-    @FXML
-    private Button returnButton;
 
+    @FXML
+    AnchorPane anchor;
 
     Tour bestTour;
 
+
+    private void addButton(Button button, AnchorPane anchorPane) {
+        button.setLayoutX(14);
+        button.setLayoutY(565);
+        button.setPrefHeight(25);
+        button.setPrefWidth(119);
+        button.setText("Return to Menu");
+        button.setMnemonicParsing(false);
+        anchorPane.getChildren().add(button);
+    }
+
+    private void addSeparator(Separator separator, AnchorPane anchorPane) {
+        separator.setLayoutY(549);
+        separator.setPrefHeight(12);
+        separator.setPrefWidth(1000);
+        anchorPane.getChildren().add(separator);
+    }
+
+    private void addLabel(Label label, AnchorPane anchorPane) {
+        label.setLayoutX(175);
+        label.setLayoutY(565);
+        label.setPrefHeight(17);
+        label.setFont(new Font(16));
+        label.setStyle("-fx-font: Bold");
+
+        label.setPrefWidth(300);
+        label.setText("domin");
+        anchorPane.getChildren().add(label);
+    }
+
     public void start(Stage primaryStage) throws Exception {
-        BorderPane mainRoot = new BorderPane();
-        Pane root = new Pane();
-
-        Label label = new Label();
-        label.setAlignment(Pos.BOTTOM_LEFT);
-        label.setPadding(new Insets(0, 100, 15, 100));
-        mainRoot.setCenter(root);
-        mainRoot.setLeft(label);
-
+        AnchorPane mainRoot = new AnchorPane();
         Separator separator = new Separator();
-        separator.setOrientation(Orientation.VERTICAL);
+        Button button = new Button();
+        button.setOnAction(event -> {
+            try {
+                handleReturnToMenuButton(button);
+                CityManager.getInstance().clearCities();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+        Label label = new Label();
 
-        separator.setMinWidth(300);
-        separator.setStyle("-fx-border-width: 5px");
-        separator.setMinHeight(600);
-        mainRoot.setLeft(separator);
-        //separator.set
-        //mainRoot.getChildren().add(separator);
-
+        addSeparator(separator, mainRoot);
+        addButton(button, mainRoot);
+        addLabel(label, mainRoot);
 
         Scene scene = new Scene(mainRoot, 1000, 600);
         ShowPointsController showPointsController = new ShowPointsController();
@@ -60,15 +89,15 @@ public class GeneticAlgorithmController {
             Circle circle = new Circle(point.getX(), point.getY(), 10);
             System.out.println(circle.toString());
             CityManager.getInstance().addCity(new City(point.getX(), point.getY()));
-            root.getChildren().add(circle);
+            mainRoot.getChildren().add(circle);
         }
 
         bestTour = null;
         label.setText("Total City: " + CityManager.getInstance().numberOfCities());
 
         scene.setOnKeyTyped(event -> {
-            // Initialize population
 
+            // Initialize population
             Population pop = new Population(50, true);
             System.out.println("Initial distance: " + pop.getFittest().getDistance());
 
@@ -82,7 +111,7 @@ public class GeneticAlgorithmController {
             if (tour.compareTo(bestTour) < 0) {
                 bestTour = tour;
                 label.setText("Total City: " + CityManager.getInstance().numberOfCities() + " | Current Best Distance: " + pop.getFittest().getDistance());
-                root.getChildren().removeIf((Node t) -> {
+                mainRoot.getChildren().removeIf((Node t) -> {
                     return t.getClass().getSimpleName().equals("Line");
                 });
                 for (int i = 0; i < tour.tourSize() - 1; i++) {
@@ -91,21 +120,25 @@ public class GeneticAlgorithmController {
                     line.setStroke(Color.GREEN);
                     line.setStrokeWidth(5);
 
-                    root.getChildren().add(line);
+                    mainRoot.getChildren().add(line);
                     line.toBack();
                 }
             }
         });
+
         primaryStage.setTitle("Genetic Algorithm");
         primaryStage.setScene(scene);
         primaryStage.show();
 
     }
 
-    public void handleReturnToMenuButton() throws Exception {
-        Stage stage = (Stage) returnButton.getScene().getWindow();
+
+    public void handleReturnToMenuButton(Button button) throws Exception {
+        Stage stage = (Stage) button.getScene().getWindow();
         stage.close();
         MainController mainController = new MainController();
         mainController.start(new Stage());
     }
+
+
 }

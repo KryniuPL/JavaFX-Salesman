@@ -11,7 +11,7 @@ public class CityManager {
         return instance;
     }
 
-    private CityManager() {
+    public CityManager() {
         cities = new ArrayList<>();
     }
     // Holds our cities
@@ -29,5 +29,10 @@ public class CityManager {
     // Get the number of destination cities
     public int numberOfCities() {
         return cities.size();
+    }
+
+    public void clearCities()
+    {
+        cities.clear();
     }
 }
