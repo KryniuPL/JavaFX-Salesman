@@ -31,7 +31,7 @@ public class MainController extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        Parent root = FXMLLoader.load(getClass().getResource("../views/MainScene.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/MainScene.fxml"));
         primaryStage.setTitle("Travelling Salesman");
         primaryStage.setScene(new Scene(root, 600, 600));
         primaryStage.show();
