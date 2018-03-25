@@ -15,7 +15,7 @@ public class GreedyAlgorithmController {
 
     public void start(Stage primaryStage) throws Exception
     {
-        Parent root = FXMLLoader.load(getClass().getResource("../views/greedyAlgorithm.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/greedyAlgorithm.fxml"));
         primaryStage.setTitle("GreedyAlgorithm");
         primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();

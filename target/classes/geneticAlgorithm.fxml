@@ -8,7 +8,7 @@
 
 <AnchorPane fx:id="anchor" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GeneticAlgorithmController">
    <children>
-      <Button fx:id="returnButton" layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#handleReturnToMenuButton" prefHeight="25.0" prefWidth="119.0" text="Return to Menu" />
+      <Button fx:id="returnButton" layoutX="14.0" layoutY="561.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="119.0" text="Return to Menu" />
       <Label fx:id="totalCityLabel" layoutX="164.0" layoutY="561.0" prefHeight="25.0" prefWidth="309.0" text=" Total City:">
          <font>
             <Font name="System Bold" size="16.0" />

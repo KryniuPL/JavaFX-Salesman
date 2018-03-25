@@ -15,7 +15,7 @@ public class NearestNeighbourAlgorithmController {
 
     public void start(Stage primaryStage) throws Exception
     {
-        Parent root = FXMLLoader.load(getClass().getResource("../views/nearestNeighbourAlgorithm.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/nearestNeighbourAlgorithm.fxml"));
         primaryStage.setTitle("Nearest Neighbour Algorithm");
         primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();

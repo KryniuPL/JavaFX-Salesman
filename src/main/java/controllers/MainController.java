@@ -33,7 +33,7 @@ public class MainController extends Application {
     {
         Parent root = FXMLLoader.load(getClass().getResource("/MainScene.fxml"));
         primaryStage.setTitle("Travelling Salesman");
-        primaryStage.setScene(new Scene(root, 600, 600));
+        primaryStage.setScene(new Scene(root, 600, 300));
         primaryStage.show();
 
     }

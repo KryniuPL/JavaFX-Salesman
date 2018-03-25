@@ -2,49 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Salesman.iml" afterPath="$PROJECT_DIR$/Salesman.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/controllers/AboutController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/controllers/GenerateDataController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/controllers/GeneticAlgorithmController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/controllers/GreedyAlgorithmController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/controllers/MainController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/controllers/NearestNeighbourAlgorithmController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/controllers/ShowPointsController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/main/java/views/MainScene.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/main/java/views/about.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/main/java/views/generateData.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/main/java/views/geneticAlgorithm.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/main/java/views/greedyAlgorithm.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/main/java/views/nearestNeighbourAlgorithm.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/model/City.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/model/CityManager.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/model/GeneticAlgorithm.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/model/Point.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/model/Population.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Salesman/model/Tour.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/AboutController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/AboutController.java" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/GenerateDataController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/GenerateDataController.java" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/GeneticAlgorithmController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/GeneticAlgorithmController.java" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/GreedyAlgorithmController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/GreedyAlgorithmController.java" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/MainController.java" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/NearestNeighbourAlgorithmController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/NearestNeighbourAlgorithmController.java" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ShowPointsController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/ShowPointsController.java" />
-      <change beforePath="$PROJECT_DIR$/src/model/City.java" afterPath="$PROJECT_DIR$/src/main/java/model/City.java" />
-      <change beforePath="$PROJECT_DIR$/src/model/CityManager.java" afterPath="$PROJECT_DIR$/src/main/java/model/CityManager.java" />
-      <change beforePath="$PROJECT_DIR$/src/model/GeneticAlgorithm.java" afterPath="$PROJECT_DIR$/src/main/java/model/GeneticAlgorithm.java" />
-      <change beforePath="$PROJECT_DIR$/src/model/Point.java" afterPath="$PROJECT_DIR$/src/main/java/model/Point.java" />
-      <change beforePath="$PROJECT_DIR$/src/model/Population.java" afterPath="$PROJECT_DIR$/src/main/java/model/Population.java" />
-      <change beforePath="$PROJECT_DIR$/src/model/Tour.java" afterPath="$PROJECT_DIR$/src/main/java/model/Tour.java" />
-      <change beforePath="$PROJECT_DIR$/src/views/MainScene.fxml" afterPath="$PROJECT_DIR$/src/main/resources/MainScene.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/views/about.fxml" afterPath="$PROJECT_DIR$/src/main/resources/about.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/views/generateData.fxml" afterPath="$PROJECT_DIR$/src/main/java/views/generateData.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/views/geneticAlgorithm.fxml" afterPath="$PROJECT_DIR$/src/main/java/views/geneticAlgorithm.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/views/greedyAlgorithm.fxml" afterPath="$PROJECT_DIR$/src/main/java/views/greedyAlgorithm.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/views/nearestNeighbourAlgorithm.fxml" afterPath="$PROJECT_DIR$/src/main/java/views/nearestNeighbourAlgorithm.fxml" />
+      <change beforePath="$PROJECT_DIR$/points.txt" afterPath="$PROJECT_DIR$/points.txt" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/AboutController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/AboutController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/GenerateDataController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/GenerateDataController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/GreedyAlgorithmController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/GreedyAlgorithmController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/MainController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/NearestNeighbourAlgorithmController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/NearestNeighbourAlgorithmController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/generateData.fxml" afterPath="$PROJECT_DIR$/src/main/resources/generateData.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/geneticAlgorithm.fxml" afterPath="$PROJECT_DIR$/src/main/resources/geneticAlgorithm.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/greedyAlgorithm.fxml" afterPath="$PROJECT_DIR$/src/main/resources/greedyAlgorithm.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/nearestNeighbourAlgorithm.fxml" afterPath="$PROJECT_DIR$/src/main/resources/nearestNeighbourAlgorithm.fxml" />
+      <change beforePath="$PROJECT_DIR$/target/Salesman-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/Salesman-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/AboutController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/AboutController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/GenerateDataController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/GenerateDataController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/GreedyAlgorithmController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/GreedyAlgorithmController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/NearestNeighbourAlgorithmController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/NearestNeighbourAlgorithmController.class" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,55 +79,121 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AboutController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AboutController.java">
+      <file leaf-file-name="geneticAlgorithm.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/geneticAlgorithm.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="90" lean-forward="false" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="greedyAlgorithm.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/greedyAlgorithm.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainScene.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/MainScene.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="49" column="63" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nearestNeighbourAlgorithm.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/nearestNeighbourAlgorithm.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="20" />
+            <state relative-caret-position="465">
+              <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-99">
-              <caret line="33" column="63" lean-forward="false" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+            <state relative-caret-position="34">
+              <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tour.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Tour.java">
+      <file leaf-file-name="GreedyAlgorithmController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/GreedyAlgorithmController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="17" column="62" lean-forward="false" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GeneticAlgorithmController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/GeneticAlgorithmController.java">
+      <file leaf-file-name="ShowPointsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ShowPointsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="69" column="33" lean-forward="false" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+            <state relative-caret-position="646">
+              <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="30" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/about.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="125" lean-forward="false" selection-start-line="7" selection-start-column="125" selection-end-line="7" selection-end-column="125" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generateData.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/generateData.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -220,6 +262,11 @@
         <option value="$PROJECT_DIR$/src/controllers/GeneticAlgorithmController.java" />
         <option value="$PROJECT_DIR$/src/controllers/AboutController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/AboutController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/GenerateDataController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/GreedyAlgorithmController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/NearestNeighbourAlgorithmController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/geneticAlgorithm.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/MainController.java" />
       </list>
     </option>
@@ -333,20 +380,7 @@
               <item name="Salesman" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesman" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesman" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -374,6 +408,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\krzys\Desktop\PROJECTS\JavaCore\Salesman\src\main\resources" />
       <recent name="C:\Users\krzys\Desktop\PROJECTS\JavaCore\Salesman\src\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -580,16 +615,15 @@
       <workItem from="1521633547136" duration="1425000" />
       <workItem from="1521638995215" duration="7671000" />
       <workItem from="1521972734778" duration="41000" />
-      <workItem from="1521972853668" duration="1275000" />
+      <workItem from="1521972853668" duration="3254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87033000" />
+    <option name="totallyTimeSpent" value="89012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -598,9 +632,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3596059" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36124796" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23152709" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -678,44 +712,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/MainScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="116" lean-forward="false" selection-start-line="20" selection-start-column="116" selection-end-line="20" selection-end-column="139" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ShowPointsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/views/generateData.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MainController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/MainScene.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -844,17 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/about.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="125" lean-forward="false" selection-start-line="7" selection-start-column="125" selection-end-line="7" selection-end-column="125" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/views/generateData.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -889,13 +874,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/NearestNeighbourAlgorithmController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -928,17 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/MainScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="49" column="63" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/views/nearestNeighbourAlgorithm.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -950,31 +917,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/GreedyAlgorithmController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/javafx-src.zip!/javafx/event/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ShowPointsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/GenerateDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231">
-          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1010,44 +956,150 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Tour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="72" column="24" lean-forward="false" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AboutController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/GenerateDataController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-99">
-          <caret line="33" column="63" lean-forward="false" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+          <caret line="33" column="75" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/GeneticAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
+        <state relative-caret-position="272">
           <caret line="69" column="33" lean-forward="false" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Tour.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/NearestNeighbourAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ShowPointsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/about.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="125" lean-forward="false" selection-start-line="7" selection-start-column="125" selection-end-line="7" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generateData.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/geneticAlgorithm.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="90" lean-forward="false" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/greedyAlgorithm.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MainScene.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="49" column="63" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/nearestNeighbourAlgorithm.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/GreedyAlgorithmController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="62" lean-forward="false" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1109,6 +1161,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

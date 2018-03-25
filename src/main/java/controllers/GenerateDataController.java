@@ -31,7 +31,7 @@ public class GenerateDataController{
 
     public void start(Stage primaryStage) throws Exception
     {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../views/generateData.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/generateData.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage=new Stage();
             stage.setTitle("Generate Data");
