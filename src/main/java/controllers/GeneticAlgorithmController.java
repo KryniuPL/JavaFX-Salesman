@@ -25,6 +25,8 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import model.*;
 
+import java.util.concurrent.TimeUnit;
+
 public class GeneticAlgorithmController {
 
 
@@ -98,7 +100,7 @@ public class GeneticAlgorithmController {
         scene.setOnKeyTyped(event -> {
 
             // Initialize population
-            Population pop = new Population(50, true);
+            Population pop = new Population((pointsFromFile.size()) / 2, true);
             System.out.println("Initial distance: " + pop.getFittest().getDistance());
 
             // Evolve population for 100 generations
@@ -114,14 +116,16 @@ public class GeneticAlgorithmController {
                 mainRoot.getChildren().removeIf((Node t) -> {
                     return t.getClass().getSimpleName().equals("Line");
                 });
+
                 for (int i = 0; i < tour.tourSize() - 1; i++) {
+
                     Line line = new Line(tour.getCity(i).getLocation().getX(), tour.getCity(i).getLocation().getY(),
                             tour.getCity(i + 1).getLocation().getX(), tour.getCity(i + 1).getLocation().getY());
                     line.setStroke(Color.GREEN);
                     line.setStrokeWidth(5);
-
                     mainRoot.getChildren().add(line);
                     line.toBack();
+
                 }
             }
         });
