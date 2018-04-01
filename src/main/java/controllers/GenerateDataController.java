@@ -12,8 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import model.City;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 import java.util.Random;
 
@@ -26,7 +25,7 @@ public class GenerateDataController {
     private final double rangeMinX = 20;
     private final double rangeMaxX = 980;
     private final double rangeMinY = 20;
-    private final double rangeMaxY = 450;
+    private final double rangeMaxY = 530;
 
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/generateData.fxml"));
@@ -37,9 +36,7 @@ public class GenerateDataController {
         stage.show();
     }
 
-
-    @FXML
-    void generateData() {
+    void drawData() {
         int IntegerPoints = Integer.parseInt(NumberOfPoints.getText());
         double randomValueX;
         double randomValueY;
@@ -52,22 +49,32 @@ public class GenerateDataController {
                 City city = new City(randomValueX, randomValueY);
                 points.add(city);
             } else {
-                double getPreviousX = points.get(i - 1).getX();//X from previous City Object
-                double getPreviousY = points.get(i - 1).getY();//Y from previous City Object
                 Random random = new Random();
                 randomValueX = rangeMinX + (rangeMaxX - rangeMinX) * random.nextDouble(); //current X
                 randomValueY = rangeMinY + (rangeMaxY - rangeMinY) * random.nextDouble(); //current Y
 
-                if (Math.abs(randomValueX - getPreviousX) < 11) {
-                    randomValueX = rangeMinX + (rangeMaxX - rangeMinX) * random.nextDouble();
-                } else if (Math.abs(randomValueY - getPreviousY) < 11) {
-                    randomValueY = rangeMinY + (rangeMaxY - rangeMinY) * random.nextDouble();
+                for(int tmp=points.size()-1;tmp>=0;tmp--) {
+                    double getPreviousX = points.get(tmp).getX();//X from previous City Object
+                    double getPreviousY = points.get(tmp).getY();//Y from previous City Object
+
+                    while (Math.abs(randomValueX - getPreviousX) < 11) {
+                        randomValueX = rangeMinX + (rangeMaxX - rangeMinX) * random.nextDouble();
+                    }
+                    while (Math.abs(randomValueY - getPreviousY) < 11) {
+                        randomValueY = rangeMinY + (rangeMaxY - rangeMinY) * random.nextDouble();
+                    }
                 }
+
                 City city = new City(randomValueX, randomValueY);
                 points.add(city);
             }
         }
+    }
 
+    void saveDataToFile() throws FileNotFoundException {
+        PrintWriter printWriter=new PrintWriter("points.txt");
+        printWriter.print("");
+        printWriter.close();
         try {
             FileWriter writer = new FileWriter("points.txt");
             for (City point : points) {
@@ -81,7 +88,13 @@ public class GenerateDataController {
             System.out.println("Fix me!!! - Reports Java Writer");
             e.printStackTrace();
         }
+        points.clear();
+    }
 
+    @FXML
+    void generateData() throws FileNotFoundException {
+        drawData();
+        saveDataToFile();
         Stage stage = (Stage) NumberOfPoints.getScene().getWindow();
         stage.close();
     }
