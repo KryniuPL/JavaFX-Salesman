@@ -25,13 +25,11 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import model.*;
 
-import java.util.concurrent.TimeUnit;
 
 public class GeneticAlgorithmController {
 
 
-    @FXML
-    AnchorPane anchor;
+    AnchorPane mainRoot;
 
     Tour bestTour;
 
@@ -61,12 +59,11 @@ public class GeneticAlgorithmController {
         label.setStyle("-fx-font: Bold");
 
         label.setPrefWidth(400);
-        label.setText("domin");
         anchorPane.getChildren().add(label);
     }
 
     public void start(Stage primaryStage) throws Exception {
-        AnchorPane mainRoot = new AnchorPane();
+        mainRoot = new AnchorPane();
         Separator separator = new Separator();
         Button button = new Button();
         button.setOnAction(event -> {
@@ -78,7 +75,6 @@ public class GeneticAlgorithmController {
             }
         });
         Label label = new Label();
-
         addSeparator(separator, mainRoot);
         addButton(button, mainRoot);
         addLabel(label, mainRoot);
@@ -101,11 +97,10 @@ public class GeneticAlgorithmController {
 
             // Initialize population
             Population pop = new Population((pointsFromFile.size()) / 2, true);
-            System.out.println("Initial distance: " + pop.getFittest().getDistance());
 
             // Evolve population for 100 generations
             pop = GeneticAlgorithm.evolvePopulation(pop);
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 1000; i++) {
                 pop = GeneticAlgorithm.evolvePopulation(pop);
             }
 
@@ -117,17 +112,13 @@ public class GeneticAlgorithmController {
                     return t.getClass().getSimpleName().equals("Line");
                 });
 
-
                 for (int i = 0; i < tour.tourSize() - 1; i++) {
-
-                    primaryStage.show();
                     Line line = new Line(tour.getCity(i).getLocation().getX(), tour.getCity(i).getLocation().getY(),
                             tour.getCity(i + 1).getLocation().getX(), tour.getCity(i + 1).getLocation().getY());
                     line.setStroke(Color.GREEN);
                     line.setStrokeWidth(5);
                     mainRoot.getChildren().add(line);
                     line.toBack();
-
                 }
             }
         });
