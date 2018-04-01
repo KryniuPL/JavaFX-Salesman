@@ -60,7 +60,7 @@ public class GeneticAlgorithmController {
         label.setFont(new Font(16));
         label.setStyle("-fx-font: Bold");
 
-        label.setPrefWidth(300);
+        label.setPrefWidth(400);
         label.setText("domin");
         anchorPane.getChildren().add(label);
     }
@@ -117,8 +117,10 @@ public class GeneticAlgorithmController {
                     return t.getClass().getSimpleName().equals("Line");
                 });
 
+
                 for (int i = 0; i < tour.tourSize() - 1; i++) {
 
+                    primaryStage.show();
                     Line line = new Line(tour.getCity(i).getLocation().getX(), tour.getCity(i).getLocation().getY(),
                             tour.getCity(i + 1).getLocation().getX(), tour.getCity(i + 1).getLocation().getY());
                     line.setStroke(Color.GREEN);
