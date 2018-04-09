@@ -11,11 +11,7 @@ import javafx.scene.control.ChoiceBox;
 
 import javafx.stage.Stage;
 
-
-
 public class MainController extends Application {
-
-
 
     @FXML
     private Button submitButton;
@@ -35,6 +31,7 @@ public class MainController extends Application {
         primaryStage.setTitle("Travelling Salesman");
         primaryStage.setScene(new Scene(root, 600, 300));
         primaryStage.show();
+
 
     }
     @FXML

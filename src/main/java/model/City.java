@@ -13,8 +13,6 @@ public class City extends Point2D implements Comparable<City> {
         this.location = new Point2D(x,y);
     }
 
-
-
     @Override
     public int compareTo(City o) {
         return (int) this.getLocation().distance(o.getLocation());

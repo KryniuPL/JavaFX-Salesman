@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import model.City;
@@ -21,6 +22,11 @@ public class GenerateDataController {
     @FXML
     public TextField NumberOfPoints;
 
+    @FXML
+    public Label validator;
+
+    private int ValueFromTextField=0;
+
     public static ObservableList<City> points = FXCollections.observableArrayList();
     private final double rangeMinX = 20;
     private final double rangeMaxX = 980;
@@ -30,14 +36,35 @@ public class GenerateDataController {
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/generateData.fxml"));
         Parent root = fxmlLoader.load();
-        Stage stage = new Stage();
-        stage.setTitle("Generate Data");
-        stage.setScene(new Scene(root));
-        stage.show();
+        primaryStage.setTitle("Generate Data");
+
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
+    public boolean getValueFromTextField()
+    {
+
+        try {
+            ValueFromTextField = Integer.parseInt(NumberOfPoints.getText());
+            return true;
+        }
+        catch (NumberFormatException e)
+        {
+            return false;
+        }
+
     }
 
     void drawData() {
-        int IntegerPoints = Integer.parseInt(NumberOfPoints.getText());
+
+        int IntegerPoints=0;
+        if(!getValueFromTextField())
+        {
+            validator.setText("Invalid number !");
+        }
+       IntegerPoints=ValueFromTextField;
+
         double randomValueX;
         double randomValueY;
 
@@ -53,7 +80,7 @@ public class GenerateDataController {
                 randomValueX = rangeMinX + (rangeMaxX - rangeMinX) * random.nextDouble(); //current X
                 randomValueY = rangeMinY + (rangeMaxY - rangeMinY) * random.nextDouble(); //current Y
 
-                for(int tmp=points.size()-1;tmp>=0;tmp--) {
+                for (int tmp = points.size() - 1; tmp >= 0; tmp--) {
                     double getPreviousX = points.get(tmp).getX();//X from previous City Object
                     double getPreviousY = points.get(tmp).getY();//Y from previous City Object
 
@@ -72,7 +99,7 @@ public class GenerateDataController {
     }
 
     void saveDataToFile() throws FileNotFoundException {
-        PrintWriter printWriter=new PrintWriter("points.txt");
+        PrintWriter printWriter = new PrintWriter("points.txt");
         printWriter.print("");
         printWriter.close();
         try {
@@ -96,7 +123,11 @@ public class GenerateDataController {
         drawData();
         saveDataToFile();
         Stage stage = (Stage) NumberOfPoints.getScene().getWindow();
-        stage.close();
+        if(getValueFromTextField())
+        {
+            stage.close();
+        }
+
     }
 
 

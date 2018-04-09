@@ -100,7 +100,7 @@ public class GeneticAlgorithmController {
 
             // Evolve population for 100 generations
             pop = GeneticAlgorithm.evolvePopulation(pop);
-            for (int i = 0; i < 1000; i++) {
+            for (int i = 0; i < 10000; i++) {
                 pop = GeneticAlgorithm.evolvePopulation(pop);
             }
 
