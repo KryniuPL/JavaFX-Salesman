@@ -9,4 +9,4 @@ Nearest Neighbour Algorithm
 
 Greedy Algorithm
 
-Currently I am working on threads sleep to shows how tours are mapped.
+
