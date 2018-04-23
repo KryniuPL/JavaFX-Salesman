@@ -40,11 +40,11 @@ public class GenerateDataController {
 
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
+
     }
 
     public boolean getValueFromTextField()
     {
-
         try {
             ValueFromTextField = Integer.parseInt(NumberOfPoints.getText());
             return true;
@@ -53,7 +53,6 @@ public class GenerateDataController {
         {
             return false;
         }
-
     }
 
     void drawData() {

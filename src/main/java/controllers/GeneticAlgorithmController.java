@@ -85,7 +85,6 @@ public class GeneticAlgorithmController {
 
         for (Point point : pointsFromFile) {
             Circle circle = new Circle(point.getX(), point.getY(), 10);
-            System.out.println(circle.toString());
             CityManager.getInstance().addCity(new City(point.getX(), point.getY()));
             mainRoot.getChildren().add(circle);
         }
@@ -100,12 +99,13 @@ public class GeneticAlgorithmController {
 
             // Evolve population for 100 generations
             pop = GeneticAlgorithm.evolvePopulation(pop);
-            for (int i = 0; i < 10000; i++) {
+            for (int i = 0; i < 1000; i++) {
                 pop = GeneticAlgorithm.evolvePopulation(pop);
             }
 
             Tour tour = pop.getFittest();
-            if (tour.compareTo(bestTour) < 0) {
+            if (tour.compareTo(bestTour) < 0)
+            {
                 bestTour = tour;
                 label.setText("Total City: " + CityManager.getInstance().numberOfCities() + " | Current Best Distance: " + pop.getFittest().getDistance());
                 mainRoot.getChildren().removeIf((Node t) -> {

@@ -22,6 +22,7 @@ public class Tour implements Comparable<Tour> {
         this.tour = tour;
     }
 
+    // Shuffling list
     public void generateIndividual() {
         for (int cityIndex = 0; cityIndex < CityManager.getInstance().numberOfCities(); cityIndex++) {
             setCity(cityIndex, CityManager.getInstance().getCity(cityIndex));
@@ -74,44 +75,6 @@ public class Tour implements Comparable<Tour> {
     // Check if the tour contains a city
     public boolean containsCity(City city) {
         return tour.contains(city);
-    }
-
-    @Override
-    public int hashCode() {
-        int hash = 7;
-        hash = 37 * hash + (int) (Double.doubleToLongBits(this.fitness) ^ (Double.doubleToLongBits(this.fitness) >>> 32));
-        hash = 37 * hash + this.distance;
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Tour other = (Tour) obj;
-        if (Double.doubleToLongBits(this.fitness) != Double.doubleToLongBits(other.fitness)) {
-            return false;
-        }
-        if (this.distance != other.distance) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public String toString() {
-        String geneString = "|";
-        for (int i = 0; i < tourSize(); i++) {
-            geneString += getCity(i) + "|";
-        }
-        return geneString;
     }
 
     @Override
